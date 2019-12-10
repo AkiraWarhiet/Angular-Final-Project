@@ -1,0 +1,18 @@
+<div *ngFor = "let movie of movies.results">
+  <div class="card" style="width: 50%; display: inline-block">
+    <div class="card-header">
+      <h3>{{movie.original_title}}</h3>
+    </div>
+    <div class="card-body">
+      <div class="container-fluid">
+        <div class="text-center">
+          <img [src]="'https://image.tmdb.org/t/p/w500/' + movie.backdrop_path"
+               class="img-responsive center-block"
+               style="max-height:300px;padding-bottom:50px" />
+               <p>{{movie.overview}}</p>
+               <p>Released: {{movie.release_date}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
