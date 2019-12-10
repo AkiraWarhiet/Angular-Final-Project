@@ -11,3 +11,13 @@ div.card {
 .table {
   margin-top: 10px
 }
+body{
+  background-color: black;
+}
+h1{
+  text-shadow: 1px 1px white;
+}
+.navbar{
+  margin-right: 400px;
+  margin-left: 400px;
+}
