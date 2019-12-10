@@ -1,5 +1,5 @@
 ﻿<div *ngFor = "let movie of movies.results">
-  <div *ngIf='movie === movies.results[0]' class="card" style="width: 50%; display: inline-block">
+  <div *ngIf='movie === movies.results[0]' class="card" style="width: 50%; display: inline-block; float: left;">
     <div class="card-header">
       <h3>{{movie.original_title}}</h3>
     </div>
@@ -17,8 +17,8 @@
   </div>
 </div>
 
-<div *ngFor="let show of shows.results">
-  <div *ngIf='show === shows.results[0]' class="card" style="width: 50%; display: inline-block">
+<div *ngFor="let show of Shows.results">
+  <div *ngIf='show === Shows.results[0]' class="card" style="width: 50%; display: inline-block">
     <div class="card-header">
       <h3>{{show.original_name}}</h3>
     </div>
@@ -28,8 +28,9 @@
           <img [src]="'https://image.tmdb.org/t/p/w500/' + show.backdrop_path"
                class="img-responsive center-block"
                style="max-height:300px;padding-bottom:50px" />
-               <p>First Air Date: {{show.first_air_date}}</p>
                <p>{{show.overview}}</p>
+               <p>First Air Date: {{show.first_air_date}}</p>
+               
                
         </div>
       </div>
